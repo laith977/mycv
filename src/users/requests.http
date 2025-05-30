@@ -1,0 +1,26 @@
+## Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "ex1apqwdqwfqwqwdmle@exa32mple.com",
+  "password": "ex1dqwdqw3131amplePassqwdqwdqwdword"
+}
+
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/421
+
+### Find all users
+GET http://localhost:3000/auth
+
+### delete a user with a given ID
+DELETE http://localhost:3000/auth/5
+
+### Update a user with a given ID
+PATCH http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+  "password": "examplePasdqwqwdqwdqwdqwdqwdsword123"
+}
