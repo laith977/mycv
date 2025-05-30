@@ -1,15 +1,36 @@
-## Create a new user
+### Create a new user
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "laith@laith123.com",
+  "password": "ex1dqwdqw3131amplePassqwdqwdqwdword"
+}
+### Sign in a user
 POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "ex1apqwdqwfqwqwdmle@exa32mple.com",
+  "email": "laith@laith123.com",
+  "password": "ex1dqwdqw3131amplePassqwdqwdqwdword"
+}
+
+### WHO AM I
+GET http://localhost:3000/auth/whoami
+
+
+### Sign out a user
+POST http://localhost:3000/auth/signout
+Content-Type: application/json
+
+{
+  "email": "laith@laith.com",
   "password": "ex1dqwdqw3131amplePassqwdqwdqwdword"
 }
 
 
 ### Find a particular user with a given ID
-GET http://localhost:3000/auth/421
+GET http://localhost:3000/auth/1
 
 ### Find all users
 GET http://localhost:3000/auth
@@ -22,5 +43,5 @@ PATCH http://localhost:3000/auth/1
 Content-Type: application/json
 
 {
-  "password": "examplePasdqwqwdqwdqwdqwdqwdsword123"
+  "email": "a@a.a"
 }
