@@ -20,6 +20,10 @@ export class Report {
   mileage: number;
   @ManyToOne(() => User, (user) => user.reports)
   user: User;
+
+  @Column({ default: false })
+  approved: boolean;
+
   afterInsert() {
     console.log('Inserted report with id', this.id);
   }

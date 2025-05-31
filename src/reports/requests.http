@@ -11,3 +11,13 @@ Content-Type: application/json
   "lng" : -122.4194,
   "lat" : 37.7749,
 }
+
+
+### Approve a report
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+  "approved" :true 
+} 
+
