@@ -28,10 +28,10 @@ export class UsersService {
     return this.repo.save(user);
   }
   async remove(id: number) {
-    const user = await this.repo.findBy({ id });
-    if (!user) {
+    const users = await this.repo.findBy({ id });
+    if (!users.length) {
       throw new Error('User not found');
     }
-    return this.repo.remove(user);
+    return this.repo.remove(users);
   }
 }
