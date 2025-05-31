@@ -19,7 +19,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           PORT: process.env.PORT || 3000,
           DATABASE_URL: process.env.DB_NAME || 'sqlite://db.sqlite',
         }),
-      ], // Load environment variables from .env file
+      ],
     }),
     UsersModule,
     ReportsModule,
